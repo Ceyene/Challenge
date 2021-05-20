@@ -6,12 +6,13 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
 }
 
 .container {
   width: 90vw;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 3rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -21,10 +22,46 @@ body {
 .container__video {
   width: 40vw;
   min-width: 270px;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  position: relative;
+}
+
+.video__button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transition: 0.5s ease;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+.video__button img {
+  width: 1.2rem;
+}
+
+.video__time {
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  z-index: 3;
+  transform: translateX(-50%);
 }
 
 .container__info {
-  width: 50vw;
+  width: 45vw;
   min-width: 270px;
   display: flex;
   flex-direction: column;
@@ -34,7 +71,7 @@ body {
 }
 
 .container__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
