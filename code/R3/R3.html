@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A Video Player in JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Cynthia Romero">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="R3.css">
+    <title>Video Player by Cynthia Romero</title>
+</head>
+<body>
+    <main class="container">
+        <!-- Video Container -->
+        <div class="container__video">
+            <!-- Timer -->
+            <div class="video__time" id="video_time">0.00 / 0.00</div>
+            <!-- Video -->
+            <video class="video" id="video">
+                <source src="Assets/R3.mp4" type="video/mp4">
+            </video>
+            <!-- Player Button -->
+            <button class="video__button" id="video_button" type="button">
+                <img id="button_icon" src="./Assets/play.svg" alt="play button">
+            </button>
+        </div>
+        <!-- Text Container -->
+        <div class="container__info">
+            <h2 class="container__title">Give the world the answer they need, become a Supernatural Partner today</h2>
+            <p class="container__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+        </div>
+    </div>
+    <script src="./R3.js"></script>
+</body>
+</html>
