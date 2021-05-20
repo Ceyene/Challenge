@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+table {
+  width: 100vw;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+td,
+th {
+  width: 16.66%;
+  padding: 0.5rem;
+  border: 0.1rem solid lightgray;
+}
+
+td:first-child {
+  font-weight: 600;
+}
