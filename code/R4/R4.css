@@ -1,0 +1,115 @@
+/*    General Styles    */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* End of General Styles */
+
+/*     Header Styles     */
+.header {
+  width: 100vw;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 2rem;
+}
+/* End of Header Styles */
+
+/*       Main Styles       */
+.main {
+  padding-top: 2rem;
+}
+/*                         */
+
+/*       Table Styles       */
+.news {
+  width: 95vw;
+  max-width: 700px;
+  margin: 0.5rem auto;
+  border: 0.2rem solid darkgray;
+  border-collapse: collapse;
+}
+
+.news tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.news th,
+.news td {
+  width: 5%;
+  border: 0.2rem solid darkgray;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.news th:first-child,
+.news td:first-child {
+  width: 60%;
+}
+
+.news th,
+.news td {
+  font-size: 0.8rem;
+}
+/*   End of Table Styles   */
+
+/*      Loader Styles      */
+.loader td {
+  padding: 15% 2rem;
+  text-align: center;
+}
+
+.loader td img {
+  width: 4rem;
+  animation: rotation 1.5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/*   End of Loader Styles   */
+
+/*      Hiden sections      */
+.hide {
+  display: none;
+}
+/*                          */
+
+/*   Error Message Styles   */
+.error td {
+  font-weight: 600;
+  color: rgb(116, 8, 8);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+/*                          */
+
+/*      Desktop Styles      */
+@media (min-width: 900px) {
+  .news th {
+    font-size: 1.1rem;
+  }
+
+  .news td {
+    font-size: 1rem;
+  }
+}
+/*   End of Desktop Styles   */
